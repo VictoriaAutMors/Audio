@@ -13,4 +13,4 @@ Linear operations performed in one domain (time or frequency) have corresponding
 
 ## How to run programm
 1) ```make```
-2) ```./bin/fourier
+2) ```./bin/fourier```
