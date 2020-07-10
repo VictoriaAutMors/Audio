@@ -86,6 +86,10 @@ Complex& Complex::operator*=(const Complex & right) {
 	return *this;
 }
 
+Complex& Complex::operator/=(double right) {
+	(*this) = (*this) / right;
+	return *this;
+}
 
 std::ostream& operator<<(std::ostream & output, const Complex & tmp) {
 	if (tmp.Im < 0) {
