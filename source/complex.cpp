@@ -31,10 +31,14 @@ double Complex::amp() const {
 }
 
 double Complex::phase() const {
-	if (Re == 0) {
-		return M_PI/2;
-	}
-	return atan(Im/Re);
+    if(Re == 0) {
+        if(Im > 0) {
+            return M_PI/2;
+        } else {
+			return -M_PI/2;
+	    }
+    }
+    return atan(Im/Re);
 }
 
 Complex Complex::operator+(Complex right) const {
