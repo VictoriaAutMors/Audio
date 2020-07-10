@@ -1,4 +1,4 @@
-all: shell.c
+all:
 	mkdir bin -p
 	g++ source/complex.cpp source/fourier.cpp source/complex.hpp -o bin/fourier -Wall -Werror -std=c++11
 
