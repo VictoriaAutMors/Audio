@@ -81,7 +81,7 @@ void prepare_fft(std::vector <Complex> & a) {
 
 int main() {
 	Complex number, tmp;
-	std::vector<Complex> f, s, check;
+    std::vector<Complex> f, s, check;
     int length;
     std::cout << "Enter length:" << std::endl;
     std::cin >> length;
@@ -115,6 +115,13 @@ int main() {
 	counter = 0;
 	for (auto & num: f) {
 		std::cout << "FFT[" << counter << "] = " << num;
+        counter++;
+	}
+	rev_fft(f);
+    std::cout << std::endl;
+	counter = 0;
+	for (auto & num: f) {
+		std::cout << "REVERSE FFT[" << counter << "] = " << num;
         counter++;
 	}
 	return 0;
