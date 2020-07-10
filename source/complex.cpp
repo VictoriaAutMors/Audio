@@ -22,6 +22,10 @@ double Complex::re() const {
 	return Re;
 }
 
+double Complex::im() const {
+	return Im;
+}
+
 double Complex::amp() const {
 	return sqrt(Re * Re + Im * Im);
 }
