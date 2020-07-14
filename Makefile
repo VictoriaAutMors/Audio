@@ -1,6 +1,7 @@
 all:
 	mkdir bin -p
-	g++ source/complex.cpp source/fourier.cpp source/complex.hpp -o bin/fourier -Wall -Werror -std=c++11
+	g++ source/Fourier.cpp -o bin/Furie
+	g++ source/vad.cpp -o bin/vad 
 
 clean:
 	rm /bin/*
