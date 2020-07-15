@@ -66,4 +66,4 @@ This energy counts in this function:
 # <a name="run"></a> How to run program
 1) ```make```
 2) ```./bin/Fourier```
-3) ```./bin/vad file.wav 0.1 0.01
+3) ```./bin/vad file.wav 0.1 0.01 ```
